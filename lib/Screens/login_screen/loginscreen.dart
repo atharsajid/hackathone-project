@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hackathone/Screens/Components/color.dart';
 import 'package:hackathone/Screens/Home%20Screen/home_screen.dart';
 
-
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -44,7 +43,10 @@ class _LoginScreenState extends State<LoginScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(
-            child: Image.asset("images/2.gif"),
+            child: Image.asset(
+              "images/2.gif",
+              height: MediaQuery.of(context).size.height * 0.6,
+            ),
           ),
           Center(
             child: Container(
